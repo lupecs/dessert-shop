@@ -20,20 +20,20 @@ export default function Home() {
             />
           </div>
 
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <Link
               href="/menu"
               className="inline-flex items-center justify-center rounded-full border border-brand-secondary px-8 py-3 text-sm tracking-[0.18em] uppercase text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition duration-300"
             >
               View Menu
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* CARDS SECTION */}
       {/* MENU CATEGORY CARDS */}
-      <section className="px-6 pb-16 pt-16">
+      {/* <section className="px-6 pb-16 pt-16">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-end justify-between gap-6">
             <div>
@@ -55,7 +55,7 @@ export default function Home() {
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {/* Jello Cakes */}
-            <Link
+            {/* <Link
               href="/"
               className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
             >
@@ -73,10 +73,10 @@ export default function Home() {
                   →
                 </span>
               </div>
-            </Link>
+            </Link> */}
 
             {/* Cups */}
-            <Link
+            {/* <Link
               href="/"
               className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
             >
@@ -93,10 +93,10 @@ export default function Home() {
                   →
                 </span>
               </div>
-            </Link>
+            </Link> */}
 
             {/* Bites */}
-            <Link
+            {/* <Link
               href="/"
               className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
             >
@@ -113,23 +113,23 @@ export default function Home() {
                   →
                 </span>
               </div>
-            </Link>
-          </div>
+            </Link> */}
+          {/* </div> */}
 
           {/* Mobile CTA */}
-          <div className="mt-8 md:hidden">
+          {/* <div className="mt-8 md:hidden">
             <Link
               href="/"
               className="inline-flex w-full items-center justify-center rounded-full border border-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
             >
               View full menu
             </Link>
-          </div>
-        </div>
-      </section>
+          </div> */}
+        {/* </div> */}
+       {/* </section> */} 
 
       {/* HOW ORDERING WORKS */}
-      <section className="px-6 pb-24">
+      {/* <section className="px-6 pb-24">
         <div className="mx-auto max-w-6xl">
           <div className="rounded-3xl bg-white/35 backdrop-blur border border-brand-secondary/20 p-8 md:p-12">
             <p className="text-xs uppercase tracking-[0.22em] text-[#2b2320]/55">
@@ -181,30 +181,30 @@ export default function Home() {
                   gelatinas for pickup or delivery anywhere in Los Angeles, CA.
                 </p>
               </div>
-            </div>
+            {/* </div> */}
 
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
-              <Link
+             {/* <div className="mt-10 flex flex-col gap-3 sm:flex-row"> */}
+              {/* <Link
                 href="/order"
                 className="inline-flex items-center justify-center rounded-full bg-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-[#2b2320] hover:opacity-90 transition"
               >
                 Request an order
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="/faq"
                 className="inline-flex items-center justify-center rounded-full border border-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
               >
                 Read FAQ
-              </Link>
-            </div>
+              </Link> */}
+            {/* </div> */}
 
-            <p className="mt-6 text-xs leading-relaxed text-[#2b2320]/55">
+             {/* <p className="mt-6 text-xs leading-relaxed text-[#2b2320]/55">
               Delivery is $12 anywhere in Los Angeles. Cancellations must be
               made 48 hours prior to delivery time.
-            </p>
-          </div>
-        </div>
-      </section>
+             </p>  */}
+           {/* </div> */}
+         {/* </div> */}
+       {/* </section>  */}
     </main>
   );
 }

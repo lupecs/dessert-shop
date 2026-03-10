@@ -33,10 +33,10 @@ export default function Navbar() {
         scrolled ? "bg-brand-base/85 backdrop-blur" : "bg-transparent",
       ].join(" ")}
     >
-      <div className="mx-auto max-w-6xl px-5">
-        <div className="relative flex h-16 items-center justify-between md:h-24">
+      {/* <div className="mx-auto max-w-6xl px-5"> */}
+        {/* <div className="relative flex h-16 items-center justify-between md:h-24"> */}
           {/* Mobile left: menu button */}
-          <button
+          {/* <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             className={[
@@ -49,10 +49,10 @@ export default function Navbar() {
             aria-expanded={open}
           >
             Menu
-          </button>
+          </button> */}
 
           {/* Left nav (desktop) */}
-          <nav className="hidden md:flex items-center gap-7">
+          {/* <nav className="hidden md:flex items-center gap-7">
             {leftNav.map((item) => (
               <Link
                 key={item.href}
@@ -68,7 +68,7 @@ export default function Navbar() {
                 <span className="pointer-events-none absolute -bottom-2 left-0 h-[1px] w-full origin-left scale-x-0 bg-brand-secondary/80 transition-transform duration-300 group-hover:scale-x-100" />
               </Link>
             ))}
-          </nav>
+          </nav> */}
 
           {/* Center logo */}
           <Link
@@ -87,7 +87,7 @@ export default function Navbar() {
           </Link>
 
           {/* Right nav + CTA (desktop) */}
-          <div className="hidden md:flex items-center gap-7">
+          {/* <div className="hidden md:flex items-center gap-7">
             <nav className="flex items-center gap-7">
               {rightNav.map((item) => (
                 <Link
@@ -115,10 +115,10 @@ export default function Navbar() {
             >
               Request
             </Link>
-          </div>
+          </div> */}
 
           {/* Mobile right: order button */}
-          <div className="md:hidden">
+          {/* <div className="md:hidden">
             <Link
               href="/order"
               className="rounded-full border border-brand-secondary/70 px-4 py-2 text-xs uppercase tracking-[0.18em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
@@ -126,10 +126,10 @@ export default function Navbar() {
               Order
             </Link>
           </div>
-        </div>
+        </div> */}
 
         {/* Mobile dropdown */}
-        {open && (
+        {/* {open && (
           <div className="md:hidden pb-5">
             <div className="mt-2 rounded-2xl bg-white/40 backdrop-blur border border-brand-secondary/30 p-4">
               <div className="grid gap-2">
@@ -154,8 +154,8 @@ export default function Navbar() {
               </div>
             </div>
           </div>
-        )}
-      </div>
+        )} */}
+      {/* </div> */}
     </header>
   );
 }
