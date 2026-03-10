@@ -1,65 +1,210 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+    <main className="bg-brand-base">
+      {/* HERO */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6">
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-base via-[#f4e9dc] to-[#efe3d3]" />
+
+        <div className="relative z-10 text-center">
+          <div className="flex justify-center">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/media/logos/colored-main-logo.png"
+              alt="Angelina’s Gelatinas Logo"
+              width={500}
+              height={500}
+              priority
+              className="w-[280px] md:w-[420px] h-auto drop-shadow-[0_10px_25px_rgba(189,147,132,0.25)]"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+
+          <div className="mt-10">
+            <Link
+              href="/menu"
+              className="inline-flex items-center justify-center rounded-full border border-brand-secondary px-8 py-3 text-sm tracking-[0.18em] uppercase text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition duration-300"
+            >
+              View Menu
+            </Link>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* CARDS SECTION */}
+      {/* MENU CATEGORY CARDS */}
+      <section className="px-6 pb-16 pt-16">
+        <div className="mx-auto max-w-6xl">
+          <div className="flex items-end justify-between gap-6">
+            <div>
+              <p className="text-xs uppercase tracking-[0.22em] text-[#2b2320]/55">
+                Explore the menu
+              </p>
+              <h2 className="mt-3 font-display text-4xl md:text-5xl text-brand-primary">
+                Gelatinas for every mood
+              </h2>
+            </div>
+
+            <Link
+              href="/menu"
+              className="hidden md:inline-flex items-center justify-center rounded-full border border-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
+            >
+              View full menu
+            </Link>
+          </div>
+
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {/* Jello Cakes */}
+            <Link
+              href="/menu?category=cakes"
+              className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
+            >
+              <h3 className="mt-3 font-display text-3xl text-brand-primary">
+                Jello Cakes
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-[#2b2320]/70">
+                Statement pieces for birthdays, celebrations, and “main
+                character” moments.
+              </p>
+
+              <div className="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-brand-secondary">
+                Browse cakes
+                <span className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+            </Link>
+
+            {/* Cups */}
+            <Link
+              href="/menu?category=cups"
+              className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
+            >
+              <h3 className="mt-3 font-display text-3xl text-brand-primary">
+                Cups
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-[#2b2320]/70">
+                Individual cups, perfect for parties, events, and easy serving.
+              </p>
+
+              <div className="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-brand-secondary">
+                Browse cups
+                <span className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+            </Link>
+
+            {/* Bites */}
+            <Link
+              href="/menu?category=bites"
+              className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
+            >
+              <h3 className="mt-3 font-display text-3xl text-brand-primary">
+                Bites
+              </h3>
+              <p className="mt-4 text-sm leading-relaxed text-[#2b2320]/70">
+                Tiny, cute, and dangerously snackable — made for sharing.
+              </p>
+
+              <div className="mt-6 inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-brand-secondary">
+                Browse bites
+                <span className="transition-transform group-hover:translate-x-1">
+                  →
+                </span>
+              </div>
+            </Link>
+          </div>
+
+          {/* Mobile CTA */}
+          <div className="mt-8 md:hidden">
+            <Link
+              href="/menu"
+              className="inline-flex w-full items-center justify-center rounded-full border border-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
+            >
+              View full menu
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW ORDERING WORKS */}
+      <section className="px-6 pb-24">
+        <div className="mx-auto max-w-6xl">
+          <div className="rounded-3xl bg-white/35 backdrop-blur border border-brand-secondary/20 p-8 md:p-12">
+            <p className="text-xs uppercase tracking-[0.22em] text-[#2b2320]/55">
+              How ordering works
+            </p>
+            <h2 className="mt-3 font-display text-4xl md:text-5xl text-brand-primary">
+              Simple, sweet, and confirmed by email
+            </h2>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-3">
+              {/* Step 1 */}
+              <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
+                <div className="text-xs uppercase tracking-[0.22em] text-brand-secondary">
+                  Step 01
+                </div>
+                <h3 className="mt-3 text-base font-medium tracking-wide text-[#2b2320]/85">
+                  Submit a request
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#2b2320]/70">
+                  Choose your category or our Party Package and tell us your
+                  date, quantity, and preferences.
+                </p>
+              </div>
+
+              {/* Step 2 */}
+              <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
+                <div className="text-xs uppercase tracking-[0.22em] text-brand-secondary">
+                  Step 02
+                </div>
+                <h3 className="mt-3 text-base font-medium tracking-wide text-[#2b2320]/85">
+                  We confirm details
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#2b2320]/70">
+                  You’ll receive an email confirmation with availability, final
+                  details, and total pricing.
+                </p>
+              </div>
+
+              {/* Step 3 */}
+              <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
+                <div className="text-xs uppercase tracking-[0.22em] text-brand-secondary">
+                  Step 03
+                </div>
+                <h3 className="mt-3 text-base font-medium tracking-wide text-[#2b2320]/85">
+                  Pay + we prepare
+                </h3>
+                <p className="mt-3 text-sm leading-relaxed text-[#2b2320]/70">
+                  Payment is collected after confirmation. Then we prep your
+                  gelatinas for pickup or delivery anywhere in Los Angeles, CA.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <Link
+                href="/order"
+                className="inline-flex items-center justify-center rounded-full bg-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-[#2b2320] hover:opacity-90 transition"
+              >
+                Request an order
+              </Link>
+              <Link
+                href="/faq"
+                className="inline-flex items-center justify-center rounded-full border border-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
+              >
+                Read FAQ
+              </Link>
+            </div>
+
+            <p className="mt-6 text-xs leading-relaxed text-[#2b2320]/55">
+              Delivery is $12 anywhere in Los Angeles. Cancellations must be
+              made 48 hours prior to delivery time.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   );
 }
