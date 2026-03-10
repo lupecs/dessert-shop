@@ -141,7 +141,7 @@ export default function Home() {
 
             <div className="mt-10 grid gap-6 md:grid-cols-3">
               {/* Step 1 */}
-              <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
+              {/* <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
                 <div className="text-xs uppercase tracking-[0.22em] text-brand-secondary">
                   Step 01
                 </div>
@@ -152,10 +152,10 @@ export default function Home() {
                   Choose your category or our Party Package and tell us your
                   date, quantity, and preferences.
                 </p>
-              </div>
+              </div> */}
 
               {/* Step 2 */}
-              <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
+              {/* <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
                 <div className="text-xs uppercase tracking-[0.22em] text-brand-secondary">
                   Step 02
                 </div>
@@ -166,10 +166,10 @@ export default function Home() {
                   You’ll receive an email confirmation with availability, final
                   details, and total pricing.
                 </p>
-              </div>
+              </div> */}
 
               {/* Step 3 */}
-              <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
+              {/* <div className="rounded-2xl bg-white/35 border border-brand-secondary/15 p-6">
                 <div className="text-xs uppercase tracking-[0.22em] text-brand-secondary">
                   Step 03
                 </div>
@@ -180,7 +180,7 @@ export default function Home() {
                   Payment is collected after confirmation. Then we prep your
                   gelatinas for pickup or delivery anywhere in Los Angeles, CA.
                 </p>
-              </div>
+              </div> */}
             {/* </div> */}
 
              {/* <div className="mt-10 flex flex-col gap-3 sm:flex-row"> */}

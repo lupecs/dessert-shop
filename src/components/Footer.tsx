@@ -26,11 +26,11 @@ export default function Footer() {
 
           {/* Explore Double Column */}
           <div className="md:col-span-2">
-            <h4 className="text-xs uppercase tracking-[0.22em] text-[#2b2320]/55">
+            {/* <h4 className="text-xs uppercase tracking-[0.22em] text-[#2b2320]/55">
               Explore
-            </h4>
+            </h4> */}
 
-            <div className="mt-6 grid grid-cols-2 gap-x-10 gap-y-4 text-sm">
+            {/* <div className="mt-6 grid grid-cols-2 gap-x-10 gap-y-4 text-sm">
               {[
                 { href: "/menu", label: "Menu" },
                 { href: "/order", label: "Order Request" },
@@ -48,7 +48,7 @@ export default function Footer() {
                   <span className="pointer-events-none absolute -bottom-1 left-0 h-[1px] w-full origin-left scale-x-0 bg-brand-secondary/60 transition-transform duration-300 group-hover:scale-x-100" />
                 </Link>
               ))}
-            </div>
+            </div> */}
           </div>
         </div>
 
