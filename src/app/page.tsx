@@ -56,7 +56,7 @@ export default function Home() {
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {/* Jello Cakes */}
             <Link
-              href="/menu?category=cakes"
+              href="/"
               className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
             >
               <h3 className="mt-3 font-display text-3xl text-brand-primary">
@@ -77,7 +77,7 @@ export default function Home() {
 
             {/* Cups */}
             <Link
-              href="/menu?category=cups"
+              href="/"
               className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
             >
               <h3 className="mt-3 font-display text-3xl text-brand-primary">
@@ -97,7 +97,7 @@ export default function Home() {
 
             {/* Bites */}
             <Link
-              href="/menu?category=bites"
+              href="/"
               className="group rounded-3xl bg-white/40 backdrop-blur border border-brand-secondary/25 p-7 hover:bg-white/55 transition"
             >
               <h3 className="mt-3 font-display text-3xl text-brand-primary">
@@ -119,7 +119,7 @@ export default function Home() {
           {/* Mobile CTA */}
           <div className="mt-8 md:hidden">
             <Link
-              href="/menu"
+              href="/"
               className="inline-flex w-full items-center justify-center rounded-full border border-brand-secondary px-6 py-3 text-xs uppercase tracking-[0.22em] text-brand-secondary hover:bg-brand-secondary hover:text-[#2b2320] transition"
             >
               View full menu

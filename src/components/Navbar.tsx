@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 const leftNav = [
-  { href: "/menu", label: "Menu" },
+  { href: "/", label: "Menu" },
   { href: "/order", label: "Order Request" },
   { href: "/merch", label: "Merch" },
 ];
